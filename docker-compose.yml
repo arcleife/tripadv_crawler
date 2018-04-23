@@ -1,6 +1,8 @@
 version: "3"
 services:
  crawler:
-  image: arcleife/tripadv_crawler:1804.0
+  build: .
   volumes:
-   - .:/tripadv_crawler
+   - ./tripadv_crawler:/home/app/tripadv_crawler
+  working_dir: /home/app/tripadv_crawler
+  command: scrapy crawl tripadv_review

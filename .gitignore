@@ -1,0 +1,4 @@
+# project files
+*.pyc
+.DS_Store
+.idea
