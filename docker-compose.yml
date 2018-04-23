@@ -3,6 +3,6 @@ services:
  crawler:
   build: .
   volumes:
-   - ./tripadv_crawler:/home/app/tripadv_crawler
+   - .:/home/app/tripadv_crawler
   working_dir: /home/app/tripadv_crawler
   command: scrapy crawl tripadv_review

@@ -1,4 +1,4 @@
-FROM python
+FROM python:2
 
 # Set the working directory to /tripadv_crawler
 # WORKDIR /tripadv_crawler

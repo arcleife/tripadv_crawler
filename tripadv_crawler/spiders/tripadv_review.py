@@ -8,7 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 import sys
-c
+
 from tripadv_crawler.items import TripadvCrawlerItem
 
 class TripadvReviewSpider(scrapy.Spider):
@@ -32,6 +32,7 @@ class TripadvReviewSpider(scrapy.Spider):
         opts = Options()
         opts.add_argument('--headless')
         opts.add_argument('--window-size=1920x1080')
+        opts.add_argument('--no-sandbox')
         # opts.add_experimental_option('detach', True)
         wd = webdriver.Chrome(chrome_options=opts)
         wd.get(self.allowed_domains[0])  # initial site
