@@ -1,5 +1,11 @@
 FROM python
 
+# Set the working directory to /tripadv_crawler
+# WORKDIR /tripadv_crawler
+
+# Copy the current directory contents into the container at /tripadv_crawler
+# ADD . /tripadv_crawler
+
 RUN apt-get update && apt-get upgrade -y
 
 RUN pip install --upgrade pip

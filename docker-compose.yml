@@ -1,0 +1,6 @@
+version: "3"
+services:
+ crawler:
+  image: arcleife/tripadv_crawler:1804.0
+  volumes:
+   - .:/tripadv_crawler
