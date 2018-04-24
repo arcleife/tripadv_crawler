@@ -4,5 +4,6 @@ services:
   build: .
   volumes:
    - .:/home/app/tripadv_crawler
+   - /dev/shm:/dev/shm
   working_dir: /home/app/tripadv_crawler
   command: scrapy crawl tripadv_review
